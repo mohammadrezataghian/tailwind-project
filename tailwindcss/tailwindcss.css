@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div.baz{
+    top: 0;
+    right: -300px;
+}
+#open:checked ~ div.baz{
+    top: 0 !important;
+    right: 0 !important;
+    transition: 300ms;
+}
+
+#close:checked ~ div.baz{
+    top: 0;
+    right: -300px;
+    transition: 300ms;
+}
