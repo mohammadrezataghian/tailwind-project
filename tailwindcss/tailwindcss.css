@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: mreza;
+    src: url(../font/IRANSansWebFaNum-Medium.eot);
+    src: url(../font/IRANSansWebFaNum-Medium.ttf);
+    src: url(../font/IRANSansWebFaNum-Medium.woff);
+    src: url(../font/IRANSansWebFaNum-Medium.woff2);
+}
+html,body{
+    font-family: mreza;
+}
 div.baz{
     top: 0;
     right: -300px;
