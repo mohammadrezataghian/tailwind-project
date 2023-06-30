@@ -16,6 +16,7 @@
         <div class="w-full h-[78px] bg-[#303F9F] flex justify-center">
             <input type="radio" name="toggle" id="open" class="hidden baz">
             <input type="radio" name="toggle" id="close" class="hidden baste">
+            <!-- start menu monile -->
             <div class="absolute min-h-[100vh]  h-auto w-[300px] bg-[#e9e9e9] baz">
                 <label for="close" class="text-white cursor-pointer absolute top-[2%] right-[90%]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
@@ -68,25 +69,92 @@
                     <li class="border-b-[1px] border-white"><a>تماس با ما</a></li>
                   </ul>
             </div>
+            <!-- end menu mobile -->
             <div class="w-[90%] lg:w-[70%] flex">
                 <div class="w-[80%]  flex justify-start">
-                    <label for="open" class="my-auto text-white cursor-pointer lg:hidden">
+                    <label for="open" class=" text-white cursor-pointer lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                         </svg></label>
-                    <ul class="w-auto h-auto gap-3 my-auto text-white hidden lg:flex">
+                    <ul class="w-auto h-auto gap-4 my-auto text-white hidden lg:flex">
                         
-                        <li class="mt-1">
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <li class="mt-1 py-7">
+                            <a href="" class="hover:text-gray-200"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                               </svg></a></li>
-                        <li><a href="">صفحه نخست</a></li>
-                        <li><a href="">درباره شرکت</a></li>
-                        <li><a href="">محصولات</a></li>
-                        <li><a href="">نمایندگی ها</a></li>
-                        <li><a href="">فروش</a></li>
-                        <li><a href="">خدمات پس از فروش</a></li>
-                        <li><a href="">تماس با ما</a></li>
+                        <li class="py-7 hover:text-gray-200"><a href="">صفحه نخست</a></li>
+                        <li class="cursor-pointer relative group py-7 hover:text-gray-200">
+                            درباره شرکت
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down inline-block" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                            <nav class="absolute right-[-150px] top-[78px] bg-white text-black w-[1170px] h-[340px]  p-2
+                            boxshadowmamad boredr-[1px] border-[#eee] cursor-default z-10 hidden group-hover:flex duration-[60s] delay-[60s] ">
+                                <div class="w-[30%] h-full border-e-[1px] p-4">
+                                    <ul>
+                                        <li class="text-[#303f9f] mb-10">درباره ما</li>
+                                        <li class="mb-2 text-sm">
+                                            <a href="#" class="hover:text-[#2a6496]">بهمن موتور در یک نگاه</a>
+                                        </li>
+                                        <li class="mb-2 text-sm">
+                                            <a href="#" class="hover:text-[#2a6496]">ماموریت و چشم انداز</a>
+                                        </li>
+                                        <li class="mb-2 text-sm">
+                                            <a href="#" class="hover:text-[#2a6496]">شرکای تجاری</a>
+                                        </li>
+                                        <li class="mb-2 text-sm">
+                                            <a href="#" class="hover:text-[#2a6496]">مسئولیت های اجتماعی</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="w-[30%] h-full border-e-[1px] p-4"><ul>
+                                    <li class="text-[#303f9f] mb-10">اخبار</li>
+                                    <li class=" text-sm">
+                                        <a href="#" class="hover:text-[#2a6496]">اخبار و مقالات</a>
+                                    </li>
+                                </ul></div>
+                                <div class="w-[30%] h-full p-4">
+                                    <ul>
+                                        <li class="text-[#303f9f] mb-10">دیگر بخش ها</li>
+                                        <li class=" text-sm">
+                                            <a href="#" class="hover:text-[#2a6496]">گالری تصاویر</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="py-7 hover:text-gray-200"><a href="">محصولات</a></li>
+                        <li class="py-7 hover:text-gray-200"><a href="">نمایندگی ها</a></li>
+                        <li class="cursor-pointer py-7 hover:text-gray-200">
+                            <details class="dropdown">
+                                <summary class=" list-none">
+                                    فروش
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill inline-block cursor-pointer" viewBox="0 0 16 16">
+                                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                      </svg>
+                                </summary>
+                                <ul class="p-0 text-sm shadow menu dropdown-content z-[1] bg-base-100 w-[245px]">
+                                  <li class="text-black"><a>فروش اینترنتی بهمن موتور</a></li>
+                                  <li class="text-black"><a>اطلاعیه های فروش شرکت بهمن موتور</a></li>
+                                  <li class="text-black"><a>فرم های قرارداد فروش</a></li>
+                                </ul>
+                              </details>
+                            <!-- class="relative group"
+                            <span class="cursor-pointer">فروش</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill inline-block cursor-pointer" viewBox="0 0 16 16">
+                                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                                <div class="duration-[60s] delay-[60s] absolute top-14 right-0 hidden group-active:block bg-white text-sm p-2 text-black w-[245px] h-[90px]">
+                                    <ul>
+                                        <li><a href="">فروش اینترنتی بهمن موتور</a></li>
+                                        <li><a href="">اطلاعیه های فروش شرکت بهمن موتور</a></li>
+                                        <li><a href="">فرم های قرارداد فروش</a></li>
+                                    </ul>
+                                </div> -->
+                        </li>
+                        <li class="py-7 hover:text-gray-200"><a href="">خدمات پس از فروش</a></li>
+                        <li class="py-7 hover:text-gray-200"><a href="">تماس با ما</a></li>
                     </ul>
                     
                 </div>
